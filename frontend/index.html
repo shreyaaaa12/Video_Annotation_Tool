@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Video Subtitle App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Video Subtitle App</h1>
+    <input type="file" id="videoFile" accept="video/*">
+    <input type="text" id="subtitleText" placeholder="Subtitle Text">
+    <input type="number" id="timestamp" placeholder="Timestamp">
+    <button onclick="uploadVideo()">Upload Video</button>
+    <button onclick="addSubtitles()">Add Subtitles</button>
+    <video id="videoPlayer" controls></video>
+    <div id="subtitles" class="subtitle-display"></div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
